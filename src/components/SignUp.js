@@ -28,7 +28,7 @@ function SignUp() {
             <label for="lname"> Last name: </label> <br />
             <input  type="text" id="lname" className="lname" value={value} onChange={handleChange}/><br />
             <label for= "email">Email:</label><br />
-            <input type="email" id="email" className="email" value={value} />
+            <input type="email" id="email" className="email" value={value} /><br />
             <label for= "password">Password:</label><br/>
             <input type= "password" id= "password" className= "password" value={value} onChange={handleChange}/><br />
             <label for= "cpassword">Confirm Password:</label><br />
