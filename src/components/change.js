@@ -1,9 +1,9 @@
 import React from 'react'
-
-function change() {
+// this is change
+function Change() {
     // return(
 
     // )
 }
 
-export default change
+export default Change
