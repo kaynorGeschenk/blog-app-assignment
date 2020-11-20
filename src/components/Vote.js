@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-
+//This is Vote
 function Vote() {
   const[likes , setLikes]= useState(0);
   const[dislikes , setDislikes]= useState(0);
