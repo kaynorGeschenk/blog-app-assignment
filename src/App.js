@@ -16,16 +16,17 @@ function ParentComponent() {
     <main>
       <Router> 
         <Navbar />
+        <Posts />
         <Switch>
           <Route path= "/" component={Home} exact />
           <Route path= "/SignUp" component={SignUp} />
           <Route path= "/SignIn" component={SignIn} />
-          <Route path= "/Post" component={Posts} />
+          
       
-        </Switch>
-      </Router>
-    </main>
-
+         </Switch>
+       </Router>
+     </main>
+    
   )
 }
 

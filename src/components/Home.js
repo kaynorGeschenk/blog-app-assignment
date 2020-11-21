@@ -1,4 +1,6 @@
 import React from 'react'
+import img1 from '../accessImage/bluec.JPG';
+
 
 function Home() {
     
@@ -11,6 +13,11 @@ function Home() {
 
                  As a blogger, everything you do flows from understanding your audience and seeking to help them.
             </h3>
+            <div>
+                <img src={img1} alt=" " style={{width:500,height:400,}} />
+            </div>
+
+
             <h3>
                   <h1>Seth Godin</h1>
                   “Not only are bloggers suckers for the remarkable, so are the people who read blogs.”

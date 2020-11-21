@@ -29,9 +29,9 @@ const initialState = {Email:"", Password:"",}
         <h1>Sign In!</h1>
         <div>
             <label for= "email">Email:</label><br />
-            <input type="email" id="email" className="email" value={value} onChange={handleChange} /><br />
+            <input type="email" id="email" className="email" value={value.Email} onChange={handleChange} /><br />
             <label for= "password">Password:</label><br/>
-            <input type= "password" id= "password" className= "password" value={value} onChange={handleChange} /><br />
+            <input type= "password" id= "password" className= "password" value={value.Password} onChange={handleChange} /><br />
             <button>Submit</button>
 
 

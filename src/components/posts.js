@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
-import Vote from "./components/Vote"
+import {nanoid} from 'nanoid';
+//import Vote from "./ components/Vote"
 
 function Posts() {
+    
+    const {posts, setPosts}= useState([]);
     const {title, setTitle}= useState ("")
     const {author, setAuthor} = useState ("")
     const {content, setContent}= useState("")
-    const {post, setPost}= useState([]);
+    
 
     const handleTitle = event => {
         setTitle(event.target.value);
@@ -19,12 +22,12 @@ function Posts() {
         setContent(event.target.value);
     };
 
-    const handlePost = (event) => {
+    const handlePosts = (event) => {
         event.PreventDefault();
-        setPost([
-            ...post,
+        setPosts([
+            ...posts,
             {
-                 
+                id: nanoid(),
                 title: title,
                 content: content,
                 author: author
@@ -35,35 +38,35 @@ function Posts() {
         setContent("")
     };
 
+
     return (
         <div>
             <form>
             <label>Title</label>
             <input value={title} onChange={handleTitle}/>
             <label>Author</label>
-            <input value={author} onChange={handleAuthor} />
+            <input value={author} onChange={(e) => handleAuthor(e)} />
             <label>Content</label>
-            <input value={content} onChange={handleContent} />
+            <input value={content} onChange={ (e) => handleContent(e)} />
 
-            <input type="submit" onClick={handlePost} />
+            <input type="submit" onClick={handlePosts} />
 
             </form>
             
 
             
                 {/* <ul>
-                    {post .map((post) =>(
-                        <li key={post.id}>
-                            {post.title} {post.author} {post.content}
+                    {posts.map((posts) => (
+                        <li key={posts.id}>
+                            {posts.title} {posts.author} {posts.content}
                         </li>
-
-                    ) )}
+                    ))}
                 </ul> */}
-        
+ 
+                    {/* < Vote /> */}
         </div>
-    )
-
-
+        
+    );
 
 }
 
