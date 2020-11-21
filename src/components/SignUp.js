@@ -1,6 +1,8 @@
 
 import React, {useState} from 'react'
 
+
+
 function SignUp() {
 
     const initialState ={
@@ -24,8 +26,14 @@ function SignUp() {
     };
     
     return (
-        <div>
-        <form onSubmit={handleSubmit}>
+    <div>
+     <form onSubmit={handleSubmit}>
+        {/* <div className = "container">
+
+            <div className = "3-col">
+
+            </div>
+            <div className = "6-col"> */}
             <h1>Create Account</h1>
             <label for="fname">First name:</label> <br />
             <input  type="text" id="fname" className="fname" value={value.Firstname} onChange={handleChange} /> <br />
@@ -37,12 +45,17 @@ function SignUp() {
             <input type= "password" id= "password" className= "password" value={value.Password} onChange={handleChange}/><br />
             <label for= "cpassword">Confirm Password:</label><br />
             <input  type= "password" id= "password" className= "password" value={value.ConfirmPassword} onChange={handleChange}/><br/>
-            <button>Submit</button>
+            <link add to= "/SignIn"><button>Submit</button> </link>
 
-        </form>
+
+            
+        
+            
+
+     </form>
  
    
-        </div>
+    </div>
     )
 }
 

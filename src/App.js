@@ -11,6 +11,7 @@ import './App.css';
 
 
 
+
 function ParentComponent() {
   return (
     <main>
@@ -21,6 +22,7 @@ function ParentComponent() {
           <Route path= "/" component={Home} exact />
           <Route path= "/SignUp" component={SignUp} />
           <Route path= "/SignIn" component={SignIn} />
+          <Route path= "Posts" component={Posts} />
           
       
          </Switch>

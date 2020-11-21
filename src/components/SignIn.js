@@ -1,5 +1,7 @@
 
-import React, {useState} from 'react'; 
+import React, {useState} from 'react';
+
+
 
 function SignIn() {
 
@@ -32,7 +34,8 @@ const initialState = {Email:"", Password:"",}
             <input type="email" id="email" className="email" value={value.Email} onChange={handleChange} /><br />
             <label for= "password">Password:</label><br/>
             <input type= "password" id= "password" className= "password" value={value.Password} onChange={handleChange} /><br />
-            <button>Submit</button>
+            <link add to= "/blog"><button>Submit</button> </link>
+            
 
 
         </div>
