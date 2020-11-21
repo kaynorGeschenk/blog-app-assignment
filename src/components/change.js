@@ -1,9 +1,11 @@
 import React from 'react'
- 
-function Change() {
-    return(
-    hh
+
+function change() {
+    return (
+        <div>
+            
+        </div>
     )
 }
 
-export default Change
+export default change

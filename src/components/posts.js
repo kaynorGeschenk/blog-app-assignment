@@ -3,6 +3,10 @@ import {nanoid} from 'nanoid';
 //import Vote from "./ components/Vote"
 
 function Posts() {
+    constructor(props); {
+        super(props);
+        this.state = {Posts}
+    }
     
     const {posts, setPosts}= useState([]);
     const {title, setTitle}= useState ("")
