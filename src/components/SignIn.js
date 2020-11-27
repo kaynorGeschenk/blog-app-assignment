@@ -1,29 +1,23 @@
-
-import React, {useState} from 'react';
-
-
+import React, {useState} from 'react'
 
 function SignIn() {
 
-const initialState = {Email:"", Password:"",}
+        const initialState = {Email:"", Password:"",};
 
-    const[value, setValue] = useState(initialState);
+       const[value, setValue] = useState(initialState);
 
-    const handleChange= (e) => {
+       const handleChange= (e) => {
         const {id, value} = e.target;
          setValue((prevState)=> ({
             ...prevState, 
             [id]: value, }));
 
-    };
+     };
 
-    const handleSubmit = (e) => {
+      const handleSubmit = (e) => {
         setValue(initialState);
         e.preventDefault();
     };
-
-    
-
 
     
     return(
@@ -31,16 +25,14 @@ const initialState = {Email:"", Password:"",}
         <h1>Sign In!</h1>
         <div>
             <label for= "email">Email:</label><br />
-            <input type="email" id="email" className="email" value={value.Email} onChange={handleChange} /><br />
+            <input type="email" id="Email" className="email" value={value.Email} onChange={handleChange} /><br />
             <label for= "password">Password:</label><br/>
-            <input type= "password" id= "password" className= "password" value={value.Password} onChange={handleChange} /><br />
-            <link add to= "/blog"><button>Submit</button> </link>
+            <input type= "password" id= "Password" className= "password" value={value.Password} onChange={handleChange} /><br />
+            <input type= 'Submit' />
             
-
-
         </div>
     </form>
     )
-};
+}
 
-export default SignIn;
+export default SignIn

@@ -8,25 +8,13 @@ function Navbar() {
         <div className = "App">
             <nav>
                 <ul>
-            <Link to= "/"> {" "} <li>Home</li> </Link>
-            <Link to= "/signUp"> {" "} <li>SignUp</li> </Link>
-            <Link to= "/signIn"> {" "} <li>SignIn</li> </Link>
+                 <Link to= "/"> {" "} <li>Home</li> </Link>
+                 <Link to= "/signUp"> {" "} <li>SignUp</li> </Link>
+                 <Link to= "/signIn"> {" "} <li>SignIn</li> </Link>
                 </ul>
             </nav>
 
         </div>
-        // <div className = "container">
-        //     <div className= "row">
-
-            
-            
-        //   </div>
-
-
-         
-
-        // </div>
-        
         
     )
 }

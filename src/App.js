@@ -6,7 +6,7 @@ import Home from "./components/Home"
 import Posts from "./components/Posts"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-
+import
 
 
 
@@ -14,20 +14,24 @@ import './App.css';
 
 function ParentComponent() {
   return (
-    <main>
-      <Router> 
+    <div>
+      <main>
+       <Router> 
         <Navbar />
-        <Posts />
+        
         <Switch>
           <Route path= "/" component={Home} exact />
           <Route path= "/SignUp" component={SignUp} />
           <Route path= "/SignIn" component={SignIn} />
-          <Route path= "Posts" component={Posts} />
+          <Route path= "/Posts" component={Posts} />
           
       
-         </Switch>
+        </Switch>
        </Router>
-     </main>
+      </main>
+    
+
+    </div>
     
   )
 }
