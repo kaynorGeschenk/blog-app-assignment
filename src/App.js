@@ -6,13 +6,13 @@ import Home from "./components/Home"
 import Posts from "./components/Posts"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-import
 
 
 
 
 
-function ParentComponent() {
+
+function App() {
   return (
     <div>
       <main>
@@ -36,4 +36,4 @@ function ParentComponent() {
   )
 }
 
-export default ParentComponent;
+export default App;
